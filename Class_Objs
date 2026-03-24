@@ -1,0 +1,51 @@
+// Iniatialize class and obj in swift programing
+struct Employee{
+    let id : Int
+    let name : String
+    let salary : Double
+    let bonus : Double
+}
+
+let emp = [
+    Employee(id: 101, name: "Un virak", salary: 300, bonus: 30.3),
+    Employee(id: 102, name: "Phal Sokpheaktra", salary: 203, bonus: 3.23),
+    Employee(id: 103, name: "Chea sokheng", salary: 202, bonus: 43.4),
+    Employee(id: 104, name: "Prum chansamedy", salary: 333, bonus: 1.4),
+    Employee(id: 105, name: "Sinh kosal", salary: 403, bonus: 4.44),
+    Employee(id: 106, name: "Vy sophal", salary: 33.4, bonus: 44.3),
+    Employee(id: 444, name: "Sam sophal", salary: 543, bonus: 34.3),
+];
+
+let result = Employee.init(id: 101, name: "Un virak", salary: 444, bonus: 33.4).name.sorted { $0 > $1 }
+let result1 = Employee.init(id: 103, name: "Prum chansamedy", salary: 334, bonus: 3.4).id.self
+print(result)
+print(result1)
+
+let result2 = Employee.init(id: 043, name: "Sam sophal", salary: 3335, bonus: 44.3).salary.isFinite;
+print(result2)
+
+let result3 = Employee.init(id: 304, name: "Vy sokhea", salary: 443, bonus: 33.4).bonus.isNaN
+print(result3)
+
+
+struct Student{
+    let id_student : Int
+    let name_s : String
+    let course : String
+}
+
+var stu = [
+    Student(id_student: 101, name_s: "Chea sokheng", course: "Swift Programing"),
+    Student(id_student: 103, name_s: "Mean sokphearon", course: "Python Programing"),
+    Student(id_student: 105, name_s: "Sah Sokvisal", course: "Flutter Programing"),
+    Student(id_student: 110, name_s: "Vong sokvithearith", course: "java Advanced "),
+    Student(id_student: 108, name_s: "Neang Sokhanha", course: "Kotlin Programing"),
+];
+
+let sortstudents = stu.sorted { $0.course > $1.course};
+print(sortstudents)
+let insertstudents : () = stu.insert(Student(id_student: 145, name_s: "De grea", course: "Data analyst"), at: 1);
+let deletestudents = stu.remove(at: 145)
+print(deletestudents)
+
+
