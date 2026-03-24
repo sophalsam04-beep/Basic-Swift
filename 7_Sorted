@@ -1,0 +1,20 @@
+import Foundation
+
+struct Student{
+    var name: String
+    var score:Int
+}
+
+let student = [
+    Student(name: "Un virak", score: 92),
+    Student(name: "Prum chansamedy", score: 85),
+    Student(name: "Chan Mithona", score: 72),
+    Student(name: "Ta reaksmey", score: 82),
+    Student(name: "Kea sokheng", score: 55),
+];
+
+let sortStudents = student.sorted { $0.score > $1.score }
+
+for i in sortStudents{
+    print(i)
+}
