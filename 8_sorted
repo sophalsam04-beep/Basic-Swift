@@ -1,0 +1,36 @@
+// For in loop
+import Foundation
+
+for i in 1...100{
+    print(i)
+}
+
+for j in 1...10{
+    print(j)
+}
+
+for k in 1..<50{
+    print(k)
+}
+
+// Nested loop
+for a in 1...10{
+    for b in 1...10{
+        for c in 1..<50{
+            print(a,b,c)
+        }
+    }
+}
+
+let base = 3
+var answer = 5;
+let power = 3;
+
+for _ in 1...power{
+    answer *= base
+}
+print(answer)
+
+// Find power
+let result = pow(3.0, 3.0)
+print(result)
