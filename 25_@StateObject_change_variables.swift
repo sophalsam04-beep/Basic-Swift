@@ -1,5 +1,3 @@
-// @StateObject For Change the all variables
-
 import SwiftUI
 internal import Combine
 class User : ObservableObject{
@@ -14,7 +12,7 @@ struct ContentView : View {
          Text("using @Stateobject to chnage the text -> alot of previous!")
             Text(user.name).font(.largeTitle);
             Button("Change Name!"){
-                user.name = "SeakLim"; // change succsfully!
+                user.name = "Prum chansamedy"
             }
         }
         .padding()
